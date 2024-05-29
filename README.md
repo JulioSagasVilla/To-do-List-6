@@ -68,3 +68,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+#Instrucciones para ejecutar la aplicación usando Docker
+
+1. Asegúrate de tener Docker instalado en tu sistema.
+
+2. Abre una terminal en la raíz del proyecto frontend.
+
+3. Construye la imagen de Docker ejecutando el siguiente comando: docker build -t nombre-de-la-imagen .
+Copy codeReemplaza `nombre-de-la-imagen` con el nombre que desees darle a tu imagen.
+
+4. Una vez que la imagen se haya construido correctamente, puedes ejecutar un contenedor basado en esa imagen con el siguiente comando: docker run -p 80:80 nombre-de-la-imagen
+Copy codeEsto mapeará el puerto 80 del contenedor al puerto 80 de tu máquina local.
+
+5. Abre un navegador web y visita `http://localhost` para acceder a la aplicación.
